@@ -1,22 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial;
-  background: #111;
-  color: white;
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+/* Center container */
+#auth, #app {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
   text-align: center;
 }
 
+/* Inputs & buttons */
 input, button {
-  padding: 10px;
-  margin: 5px;
-  width: 250px;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+input {
+  background: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
 }
 
 button {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
+/* Video grid */
+#videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Video card */
 .video {
-  border: 1px solid #333;
-  margin: 10px;
-  padding: 10px;
+  background: #181818;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.video h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.video a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Bigger screens (tablet / desktop) */
+@media (min-width: 700px) {
+  #videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
