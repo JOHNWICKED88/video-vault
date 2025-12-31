@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Vault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎥 Video Vault</h1>
+
+  <!-- LOGIN -->
+  <div id="auth">
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- APP -->
+  <div id="app" style="display:none;">
+    <h2>Add Video</h2>
+    <input id="title" placeholder="Video Title">
+    <input id="link" placeholder="Video Link">
+    <input id="thumb" placeholder="Thumbnail Image URL">
+    <button onclick="addVideo()">Save Video</button>
+
+    <h2>Your Videos</h2>
+    <div id="videos"></div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

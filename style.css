@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  width: 250px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.video {
+  border: 1px solid #333;
+  margin: 10px;
+  padding: 10px;
+}
